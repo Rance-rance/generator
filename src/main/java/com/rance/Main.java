@@ -49,6 +49,8 @@ public class Main {
                             .disableSerialVersionUID()
                             .enableLombok()
                             .enableTableFieldAnnotation()
+                            .addTableFills(new Column("create_time", FieldFill.INSERT))
+                            .addTableFills(new Column("update_time", FieldFill.INSERT_UPDATE))
                             .enableFileOverride()
                             .mapperBuilder()
                             .enableMapperAnnotation()
