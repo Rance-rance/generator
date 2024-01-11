@@ -14,7 +14,7 @@ public class Main {
     private static final String username = "sa";
     private static final String password = "qwertyuiop";
     private static final String parentPackageName = "com.rance";
-    private static final String moduleName = "jlzk-mes-crop";
+    private static final String moduleName = "";
     private static final String writer = "Rance";
     private static final String outPath = projectPath + "\\src\\main\\java";
     private static final String mapperPath = projectPath + "\\src\\main\\java\\com\\rance\\jlzk-mes-crop\\mapper\\xml\\";
@@ -35,7 +35,7 @@ public class Main {
                 })
                 .packageConfig(builder -> {
                     builder.parent(parentPackageName)
-                            .moduleName(moduleName)
+                            // .moduleName(moduleName)
                             .pathInfo(Collections.singletonMap(OutputFile.xml, mapperPath));
                 })
                 .strategyConfig(builder -> {
